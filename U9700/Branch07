@@ -1,0 +1,346 @@
+
+
+
+
+*Table 7:  IEEE 802.3 Attributes (Branch 07)
+
+/MAC
+
+00 01, MAC ID, R, ID for this MAC in this device
+00 02, Frames TX OK, R, Frames transmitted
+00 03, Single Collision Frames, R, Frames suffering a single collision
+00 04, Multiple Collision Frames, R, Frames suffering multiple collisions
+00 05, Frames RX OK, R, Frames received with no errors
+00 06, FCS Err, R, Frames received with FCS errors
+00 07, Alignment Error, R, Alignment errors
+00 08, Octets TX OK, R, Octets transmitted in frames with no errors
+00 09, Frames Deferred, R, Deferred due to collisions
+00 0A, Late Collisions, R, Collisions after frame in progress
+00 0B, Excessive Collisions, R, Frames dropped due to too many collisions
+00 0C, Lost MAC TX Err, R, Frames lost due to MAC transmission error
+00 0E, Octets RX OK, R, Octets received in good frames
+00 0F, Frames Lost MAC, RX, Error R Frames lost due to MAC receive error
+00 12, Multicast Frames Tx, R, –
+00 13, Broadcast Frames Tx, R, –
+00 14, Frames Excessive Deferral, R, –
+00 15, Multicast Frames Rx, R, –
+00 16, Broadcast Frames Rx, R, –
+00 17, In Range Length Error, R, –
+00 18, Out of Range Length Error, R, –
+00 19, Frame Too Long, R, –
+00 1A, MAC Enable Status, R/W, –
+00 1D, MAC Addr, R, –
+00 1E, MAC Collision Frames, R, –
+
+/PHY
+
+00 20, PHY Type, R, –
+00 23, PHY Symbol Err DuringCarrier, R, –
+00 25, PHY Admin State, R/W, –
+
+/MAU
+00 47, MAU Media Available, R, –
+
+
+
+
+
+
+
+/Auto-negotioation
+00 4E, Auto Neg ID, R, –
+00 4F, Auto Neg Admin State, R/W, –
+00 50, Auto Neg Remote Signal, R, –
+00 51, Auto Neg Config, R, –
+00 52, Auto Neg Local Tech, R/W, –
+00 53, Auto Neg Advertised Tech, R/W, –
+00 54, Auto Neg RX Tech, R, –
+00 55, Auto Neg Local Select, R, –
+00 56, Auto Neg Advert Select, R, –
+00 57, Auto Neg RX Select, R, –
+
+/MAC
+00 5A, Duplex Status, R/W , -
+
+/MAC Control
+00 5D, MAC Ctrl Functions Supported, R, –
+00 5E, MAC Ctrl Frames Tx, R, –
+00 5F, MAC Ctrl Frames Rx, R, –
+00 60, MAC Ctrl Unsupported Op Rx, R, –
+00 61, MAC Ctrl Pause Delay, R, –
+00 62, MAC Ctrl Pause Tx, R, –
+00 63, MAC Ctrl Pause Rx, R, –
+
+/OMP Emulation
+01 18, MPCP Frames Tx, R, –
+01 19, MPCP Frames Rx, R, –
+01 20, MPCP TX Discovery, R, –
+01 22, MPCP Disc Timeout, R, –
+
+/FEC
+01 24, FEC Corrected Blocks, R, –
+01 25, FEC Uncorrectable Blocks, R, –
+01 39, FEC Ability, R/W, –
+01 3A, FEC Mode, R/W, –
+
+/OMP Emulation
+01 3B, MPCP TX Gate, R, –
+01 3C, MPCP TX Reg Ack, R, –
+01 3D, MPCP TX Register, R, –
+
+
+
+
+
+01 3E, MPCP TX Reg Req, R, –
+01 3F, MPCP TX Report, R, –
+01 40, MPCP RX Gate, R, –
+01 41, MPCP RX Reg Ack, R, –
+01 42, MPCP RX Register, R, –
+01 43, MPCP RX Reg Req, R, –
+01 44, MPCP RX Report, R, –
+
+
+
+
+
+
+
+*Table 8:  IEEE 802.1 Attributes (Branch 07)
+
+/Bridge
+00 00, Bridge Address, R, –
+00 02, Num Ports, R, –
+00 03, Port Address, R, –
+
+/RSTP
+00 05, Bridge Identifier, R, –
+00 06, Time Since Topology Change, R, –
+00 07, Topology Change Count, R, –
+00 08, Topology Change, R, –
+00 09, Designated Root, R, –
+00 0A, Root Path Cost, R, –
+00 0B, Root Port, R, –
+00 0C, Max Age, R/W, –
+00 0D, Hello Time, R/W, –
+00 0E, Forward Delay, R/W, –
+00 0F, Bridge Max Age, R/W, –
+00 10, Bridge Hello Time, R/W, –
+00 11, Bridge Forward Delay, R/W, –
+00 12, Hold Time, R/W, –
+00 13, Bridge Priority, R/W, –
+00 22, Port Identifier, R, –
+00 23, Port Priority, R/W, –
+00 24, Path Cost, R/W, –
+00 25, Port Designated Root, R, –
+00 26, Designated Cost, R, –
+00 27, Designated Bridge, R, –
+00 28, Designated Port, R, –
+00 33, Port State, R, –
+
+
+
+*Table 9:  Broadcom Attributes (Branch 07)
+
+/Identification
+00 80, Firmware Version, R, Firmware version
+00 81, Extended ID, R, Extended ID information (defined by vendor)
+00 B3, JEDEC ID, R, JEDEC ID information (chip manufacturer)
+00 B4, Chip ID, R, Chip ID
+00 B5, Chip Version, R, Chip version
+
+/MAC Learning
+00 82, Dyn Learn Tbl Size, R/W, Dynamic MAC learning table size
+00 83, Dyn Learn Age Limit, R/W, Dynamic MAC learning table age limit
+
+/IETF RMON Stats
+00 84, RxUnicastFrames, R, Gets RxUnicastFrames counter of one port
+00 85, TxUnicastFrames, R, Gets TxUnicastFrames counter of one port
+00 86, RxFrameTooShort, R, Gets RxFrameTooShort counter of one port
+00 87, RxFrame64, R, 64 byte frame count
+00 88, RxFrame65_127, R, 65..127 byte frame count
+00 89, RxFrame128_255, R, 128..255 byte frame count
+00 8A, RxFrame256_511, R, 256..511 byte frame count
+00 8B, RxFrame512_1023, R, 512..1023 byte frame count
+00 8C, RxFrame1024_1518, R, 1024..1518 byte frame count
+00 8D, RxFrame1519Plus, R, 1519+ byte frame count
+00 8E, TxFrame64, R, 64 byte frame count
+00 8F, TxFrame65_127, R, 65..127 byte frame count
+00 90, TxFrame128_255, R, 128..255 byte frame count
+00 91, TxFrame256_511, R, 256..511 byte frame count
+00 92, TxFrame512_1023, R, 512..1023 byte frame count
+00 93, TxFrame1024_1518, R, 1024..1518 byte frame count
+00 94, TxFrame1519Plus, R, 1519+ byte frame count
+00 95, TxDelayThreshold, R/W, Threshold for delay that causes Bytes Delayedcounter to increment
+00 96, TxDelay, R, Maximum frame delay experienced since statisticreset
+00 97, TxFramesDropped, R, Upstream frames dropped due to queue overflow
+00 98, TxBytesDropped, R, Upstream bytes dropped due to queue overflow
+00 99, TxBytesDelayed, R, Bytes in frames delayed more thanTxDelayThreshold
+00 9A, TxBytesUnused, R, Bytes granted to the LLID, but not filled withtransmitted data.
+
+
+
+
+
+
+
+00 9B, RxDelayThreshold, R, Threshold (in 100 μs increments) for delay thatcauses Bytes Delayed counter to increment
+00 9C, RxDelay, R, Maximum frame delay experienced since statisticreset
+00 9D, RxFramesDropped, R, Downstream frames dropped due to queue overflow
+00 9E, RxBytesDropped, R, Downstream bytes dropped due to queue overflow
+00 9F, RxBytesDelayed, R, Bytes in downstream frames delayed more thanRxDelayThreshold
+
+/Statistics Alarm Thresholds
+00 A0, Port Stat Threshold, R/W, Port Statistics alarm threshold
+00 A1, Link Stat Threshold, R/W, Link stats alarm threshold
+01 A0, Port Stat Threshold Inv, R/W, Port statistics alarm threshold interval
+01 A1, Link Stat Threshold Inv, R/W, Link stats alarm threshold interval
+
+/Encryption
+00 A2, Encrypt Key Expiry Time, R/W, Time until a new key is generated
+00 A3, Len Error Discard, R/W, Frames discarded due to length errors
+
+/MAC Learning Tables
+00 A4, Dynamic Mac Tbl, R, Dynamically learned MAC address table
+00 A5, Static Mac Tbl, R, Statically provisioned MAC address table
+
+/Misc Controls
+00 A6, Upstream Filter Tbl, R, Upstream filtering rules (deprecated; seeDownstream Rules Tbl [B1])
+00 A7, Downstream Filter Tbl, R, Downstream filtering rules (deprecated; seeUpstream Rules Tbl [B2])
+00 A8, Report Thresholds, R/W, Threshold levels used to generate MPCP reportmessages
+00 A9, Broadcast Rate Limit, R/W, Broadcast frames per second allowed upstreamthrough UNI port
+00 AA, Link Config [obsolete], –, Traffic classification rules for link [obsolete]
+00 AB, ONU Queue Config[obsolete], –, Path and queue configuration for the entire ONU[obsolete]
+00 AC, Alternate C-VLAN Ethertype, R/W, VLAN tag Ethertype (in addition to 8100)
+00 AD, Output Shaping, R/W, Output shaping (3701 only)
+00 AE, Port Capability, R/W, UNI Port Capability
+00 AF, Vlan Stuffing ID, R/W, VLAN ID value used for VLAN Stuffing
+00 B0, MDI Crossover, R/W, MDI extended setting [obsolete]
+00 B1, Downstream Rules Tbl, R/W, Downstream rules
+00 B2, Upstream Rules Tbl, R/W, Upstream rules
+
+
+
+
+/Clock Reference
+00 B6, 1pps Clock, W, Next 1pps time
+00 B7, 1pps Clock Compensation, W, OLT 1pps offset to compensate for loop time
+
+/External Switch Control
+00 B8, Egress Shaping, R/W, Rate control for frames egressing a port
+00 B9, Ingress Policing, R/W, Rate control for frames ingressing a port
+00 BA, COS Translation, R/W, COS translation (which COS value becomes which COS value)
+00 BB, Pri Enqueuing, R/W, Priority enqueuing map (which priority goes into which queue)
+00 BC, Port Vlan Policy, R/W, Gets/sets the VLAN policy for a given port
+00 BD, Port Vlan Membership, R/W, Gets/sets the current VLAN membership for a given port
+00 BE, ARP Replicate Dest, R/W, ARP replication destination bitmap
+00 BF, LACP Destination, R/W, Destination for LACP passthrough feature
+00 C0, RSTP Port Mode, R, [obsolete]
+00 C1, RST Port OperEdge, R/W, “OperEdge” value for RSTP; edge port on the RSTP graph
+00 C2, RSTP Bridge Options, R/W, [obsolete]
+00 C3, RSTP Bridge Mode, R/W, Gets/sets the RSTP Bridge mode of one port
+00 C4, ONU IGMP VLAN, R/W, IGMP VLAN provisioning
+00 C5, Time of Day, R, ASCII encoded Time of Day string
+00 C6, Alternate Ethertype, R/W, Alternate VLAN Ethertype
+00 D0, Dyn Learning Mode, R/W, Learning Mode
+00 D1, Min. Mac Limit, R/W, Minimum guaranteed MAC addresses (per port)
+00 D2, ONU Aggregate MAC Limit, R/W, Total MAC addresses learnable per ONU
+00 D3, Nvs Scratchpad, R/W, Write nonvolatile Flash memory record on ONU
+
+/MAC Learning
+00 D4, Flood Unknown, R/W, Flood unknown MAC addresses?
+00 D5, Local Switching, R/W, Allow UNI – UNI switching?
+00 D6, Down Burst Toll, R/W, Enables/disables downstream burst tolerance
+
+/FEC
+00 D7, FEC Mode, R/W, Gets/sets the current FEC mode
+00 D8, Sequence Number, –, Sequence number of multipart OAM message.  See “Multiple Part OAM Responses” on page 126 .
+00 DA, Learn Mode Rule Update, W, Gets/sets the learn mode rule update value
+
+/Power Monitoring
+00 DB, Temperature, R, Gets the current power monitor temperature
+00 DC, Vcc, R, Gets the current power monitor Vcc
+00 DD, Tx Bias, R, Gets the current power monitor TX bias
+
+
+
+
+
+
+
+00 DE, Tx Power, R, Gets the current power monitor TX power
+00 DF, Rx Power, R, Gets the current power monitor RX power
+
+/Miscellaneous
+00 E0, Multicast Domain Config, R/W, Gets/sets the current multicast domain configuration
+00 E1, Multicast Global Config, R/W, Gets/sets the current multicast global configuration
+00 E2, Multicast Group Info, R/W, Gets/sets the multicast group info for a multicast group
+00 E3, Link State, W, Sets the current link state
+00 E4, IPMC Frame Rate Limit, R/W, Limit upstream IPMC control frames
+00 E6, ONU Holdover, R/W, Gets/sets the current holdover settings
+00 E7, IPMC Unknown Leave Forwarding, R/W, Forwarding behavior for IGMP LEAVE messages with unknown group addresses
+00 EA, Network PON Map, R/W, IPN switching priorities for user side to network side and control port to network side port.
+00 EB, ONU PS State, R/W, Contains the current protection switching state of the ONU
+00 EC, SLE Mode, R/W, Contains the current SLE Mode
+00 ED, Learning Table Mode, R/W, Contains the current Learning Table Mode
+00 F2, Transceiver Signal Detect, R, The value of signal detect for a network side or user side port on the IPN.
+00 F3, Crossbar Configuration, R, Current crossbar configuration of the IPN.
+00 F4, Extended Burst Activity, R, The value of extended burst activity (LOS) on a network side or user side port on the IPN.
+00 F5, Control Port, R/W, The network side port the IPN registers
+00 F6, Failsafe, R/W, Gets/sets the failsafe mechanism states.
+00 F8, Encryption Mode, R/W, Gets/sets the encryption mode of a link
+00 FB, Detailed Version, R, Gets the detailed version of the firmware on the ONU
+00 FC, Firmware Timestamp, R, Gets the timestamp of the firmware on the ONU
+00 00, CTC Authentication LOID, R/W, Gets/sets the CTC Authentication LOID
+00 01, CTC Authentication Password, R/W, Gets/sets the CTC Authentication Password
+00 45, Software Learning, R/W, Gets and sets (enables/disables) the software learning of MAC addresses
+10 81, CTC Authentication LOID, R/W, Get/Set CTC Authentication LOID
+10 82, CTC Authentication Password, R/W, Get/Set CTC Authentication Password
+10 83, Downstream forwarding mode,R/W, Downstream forwarding mode configuration
+10 84, Aging time in hard learning mode, R/W, Aging time configuration
+10 85, CTC Alarm Value, R/W, Used by the external CPU to control the alarm value
+
+
+
+
+
+
+10 E8, OAM Discovery State, R, Gets the OAM discovery state of all links
+10 E9, CTC Discovery State, R, Gets the CTC discovery state of all links
+10 EA, Get EPON link info, R, Get EPON LOS state and each link’s register state and Physical LLID
+10 EB, Switch port mirror, R/W, Configure switch port mirror
+10 EC, ONU serial number, R/W, Configure serial number
+10 ED, EPON port state, R/W, Enable/Disable EPON port state
+10 EE, EPON register state, R, Gets EPON register state
+10 EF, Set Mac learning mode, W, Sets MAC learning mode configuration
+10 F0, Set Mac flush, W, Flushes all MAC or static MAC
+10 F1, Set/Get MTU size, R/W, Contains the size of the switch’s MTU
+10 F2, Mac Learning Switch, R/W, Switches MAC learning mode to hardware mode or software mode
+10 F3, Get/Set Battery backup capability, R/W, Identifies the battery backup capability and sets it in personality Get/Set battery backup capability into/from PERS
+10 F4, Get CTC OAM negotiation version, R, Gets the CTC OAM version that negotiates with OLT
+10 FF, Get/Set Laser Always On, R/W, Establishes the laser always on capability
+11 00, Get CTC Churning State, R, Gets the current CTC encryption state12 EC CTC LOID Authentication ResultR Result of last LOID authentication
+7F E5, Alarm Thresholds, R/W, Get/Set the threshold to raise/clear the alarm
+7F E6, ONU Personality Variant, R/W, Gets/sets the Personality Variant of the ONU
+7F EA, Lue Field Select, R/W, Get/Set LUE Field Select
+7F EB, Port Static Entries, R, Gets the static entries from the port MAC table
+7F EC, Port Dynamic Entries, R, Gets the dynamic entries from the port MAC table
+7F ED, Get PON Configuration Info, R, Gets the current PON configuration information
+7F F0, Get/Set Binary Search Configuration, R/W, Configures binary table searches and learning/aging parameters on the 10G ONU.
+7F F1, Get/Set ONU Queue Config V2, R/W, Gets/sets the queue configuration on the ONU
+7F F2, Get EPON Downstream Data Security Encryption Information, R, Returns the downstream data security encryption information, key number bitmap, and encryption enable bitmap
+7F F3, Get/Set MPCP Forward Status, R/W, Gets/sets the state for forwarding MPCP
+7F F4, Reserved, NA, Reserved
+7F F5, Get/Set NVS State, R/W, Gets/sets the NVS state of the ONU
+7F F6, Get/Set Port MTU, variesa, Gets/sets the MTU of a port on the ONU
+
+
+
+
+7F F7, Get File Info, R, Gets information about all the files stored in the ONU’s flash memory
+7F F8, Get/Set Encryption Key, R/W, Gets/sets the encryption keys in use on a link
+7F F9, Get Extended Version, R, Gets the extended version of the firmware currently running on the ONU
+7F FA, Get Feature Set, R, Gets the feature set of the firmware currently running on the ONU
+7F FC, Get/Set Shaper Configuration, R/W, Gets/sets 10G shapers
+7F FD, Get Policers All, R, Gets all 10G policers
+7F FE, Get/Set 10G Rules Configuration, R/W, Gets/sets 10G rules

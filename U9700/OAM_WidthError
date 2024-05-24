@@ -1,0 +1,12 @@
+
+No Error, The operation was successfully completed, 80
+Too Long, Length of result exceeded OAM PDU data field available, 81
+Bad Parameters, Parameters for the requested action fail error checking, 86
+No Resources, The device does not currently have the resources (such as table entries or memory) to perform the requested action, 87
+System Busy, The device does not currently have the resources (such as table entries or memory) to perform the requested action, 88
+Undetermined, Unknown or unlisted Attribute error, A0
+Unsupported, The Attribute requested is not supported on this device, A1
+May Be Corrupted, The value of an Attribute counter may be invalid due to reset, A2
+Hardware Failure, An Attribute hardware error prevented the operation from completing, A3
+Overflow, Requested Attribute experienced overflow error, A4
+

@@ -1,0 +1,81 @@
+
+
+
+00 05, PHY Admin Control, Enable/disable PHY
+00 0B, Auto Neg Renegotiate, Force renegotiation
+00 0C, Auto Neg Admin Ctrl, Auto Neg enable/disable
+
+
+00 80, ClearDynLearnTbl, Clear dynamically learned MAC addresses
+00 81, AddStaticEntry, Add static bridging entry to UNI port
+
+
+00 82, DeleteStaticEntry, Delete static bridging entry from UNI port
+00 83, ClearUpFilterTbl, Clear all upstream filter rules
+00 84, ClearDnFilterTbl, Clear all downstream filter rules
+00 85, AddRule, Add filter rule
+00 86, DelRule, Delete filter rule
+00 87, ResetOnu, Reset ONU, as from power on
+00 88, ClearStats, Clear all statistics to zero
+00 89, GetGpioConfig, Get GPIO configuration
+00 8A, SetGpioConfig, Set GPIO configuration
+00 8B, GetGpioValue, Read GPIO values
+00 8C, SetGpioValue, Write GPIO values
+00 8D, GetMdio, Read MDIO register
+00 8E, SetMdio, Write MDIO register
+00 8F, LoopbackEnable, Enable loopback
+00 90, LoopbackDisable, Disable loopback
+00 91, ClrUpClass Clears, current in-context link
+00 92, ClrDnClass Clears, current in-context port
+00 93, SetQueueConfig, Set Queue configuration
+00 94, GetQueueConfig, Get Queue configuration
+00 95, EraseNvs, Erase Non-volatile Store
+00 96, SetIgmpConfig, Set IGMP configuration
+00 97, GetIgmpConfig, Get IGMP configuration
+00 98, GetIgmpGroupInfo, Get IGMP Group information
+00 99, DelIgmpGroup, Delete IGMP Group information
+00 9A, AddIgmpGroup, Add IGMP Group information
+00 9B, SetQueueRateControl, Set Queue output rate control (3711 only)
+00 9C, GetQueueRateControl, Get Queue output rate control (3711 only)
+00 9D, SetPortRateControl, Set Port output rate control (3711 only) [obsolete]
+00 9E, GetPortRateControl, Get Port output rate control (3711 only) [obsolete]
+00 9F, SetPhyAddrMdio, Set Phy addressable MDIO register
+00 A0, GetPhyAddrMdio, Get Phy addressable MDIO register
+00 A1, NewAddRule, New Add filter rule command
+00 A2, OnuEnableUserTraffic, Enable ONU user traffic
+00 A3, OnuDisableUserTraffic, Disable ONU user traffic
+00 A4, SetDnBcastQueue, Set downstream Broadcast Queue
+00 A5, GetDnBcastQueue, Get downstream Broadcast Queue
+00 A6, SetOamRate, Set OAM rate00 A7 GetOamRate Get OAM rate
+00 A8, SetLUEField, Set the LUE Field
+
+
+
+
+
+
+00 A9, GetLUEField, Get the LUE Field
+00 AA, GetLoadInfo, Get the Load information
+00 AB, NewDelRule, New Delete filter rule command
+00 AC, ClrUpUserRules, Clear upstream user rules
+00 AD, ClrDnUserRules, Clear downstream user rules
+00 AE, DelMcastDomainCfg, Delete multicast domain configuration
+00 AF, DelMcastGroup, Delete multicast group
+00 B0, LaserTxPowerOff, Turn laser TX off
+00 B1, LaserTxPowerOff, Turn laser TX off
+00 B2, Sleep, Put ONU to sleep
+00 B3, ProtSwitch, Protection switch ONU (Type C only)
+00 B5, Add Rule, Adds 10G ONU rules
+00 B6, Delete Rule, Deletes 10G ONU rules
+00 B9, GetGpioVariableConfig, Get GPIO variable configuration
+00 BA, SetGpioVariableConfig, Set GPIO variable configuration
+00 BB, GetGpioVariableValue, Get GPIO variable value
+00 BC, SetGpioVariableValue, Set GPIO variable value
+00 BD, Generate Traffic, Instruct the ONU to send a packet burst
+10 81, ClrMacFilterTbl, Clear MAC filter table
+10 FF, GetPonLos, Get the state of PON signal if it is lost
+7F 03, OamExtActPartExtendId, Configure part fields of the ONU CTC extended ID
+7F 04, BaseMacSet, Configure EPON MAC and user MAC
+7F 05, ONU Commit, Makes the active application region backup and commits the backup application region to active status
+7F 06, Reset External Switch, Toggle a Reset GPIO to an external switch
+
